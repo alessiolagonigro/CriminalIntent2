@@ -24,7 +24,7 @@ class CrimeLab(context: Context) {
     }
 
     fun getCrime(id: UUID): Crime? {
-        return crimes.firstOrNull { it.id == id }
+        return crimes.firstOrNull { it.id == id}
     }
 
     companion object {
