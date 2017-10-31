@@ -15,10 +15,12 @@ class CrimeLab(context: Context) {
         return crimes.firstOrNull { it.id == id }
     }
 
+
+
     companion object {
         private var sCrimeLab: CrimeLab? = null
 
-        operator fun get(context: Context): CrimeLab {
+        @JvmStatic operator fun get(context: Context): CrimeLab {
 
             if (sCrimeLab == null) {
                 sCrimeLab = CrimeLab(context)
