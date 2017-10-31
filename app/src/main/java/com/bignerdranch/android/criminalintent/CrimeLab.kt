@@ -8,6 +8,7 @@ import java.util.*
  */
 
 class CrimeLab(context: Context) {
+    //INIZIALIZZA : for i = 1 to 100
     val crimes = (0 until 100).map { Crime("Crime #$it", it % 2 == 0) }
 
     fun getCrime(id: UUID): Crime? {
